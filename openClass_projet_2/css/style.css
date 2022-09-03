@@ -1,0 +1,23 @@
+header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+main {
+  padding: 60px;
+  text-align: center;
+  background: blue;
+  color: white;
+  font-size: 30px;
+}
+
+footer {
+  padding: 60px;
+  text-align: center;
+  background: purple;
+  color: white;
+  font-size: 30px;
+}
