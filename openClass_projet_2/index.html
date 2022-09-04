@@ -5,15 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Booki</title>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
   </head>
   <body>
-    <!--HEADER-->
-    <header>
+    <!--HEADER NAV-->
+    <header class="flex">
       <div class="logo">
         <img src="./assets/logo/Booki.png" alt="Booki logo" />
       </div>
-      <nav>
-        <a href="#">Hébergements</a>
+      <nav class="nav flex">
+        <a href="#" class="active">Hébergements</a>
         <a href="#">Activités</a>
       </nav>
     </header>
@@ -33,11 +35,24 @@
     <!--filters-->
       <div id="myBtnContainer">
         <h2>filtres</h2>
-        <button class="btn active">Économique</button>
-        <button class="btn">Familial</button>
-        <button class="btn">Romantique</button>
-        <button class="btn">Animaux autorisés</button>
+        <button class="btn active">
+          <div class="chip flex">
+            <i class="fa-solid fa-money-bill-wave"></i>
+          Économique
+          </div>
+          </button>
+          <div class="filter flex">
+            <div class="iconFilter flex">
+              <i class="fa-solid fa-child-reaching"></i>
+            </div>
+            <span>Familial</span>
+        </div>
+        <button class="btn"><i class="fa-solid fa-heart"></i>Romantique</button>
+        <button class="btn"><i class="fa-solid fa-dog"></i>Animaux autorisés</button>
       </div>
+
+
+
       <p>! Plus de 500 logements sont disponibles dans cette ville</p>
       <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
 <div class="container">
