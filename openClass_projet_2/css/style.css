@@ -41,10 +41,90 @@ header .menu-link:hover {
 
 /* Nav end */
 
-footer {
-  padding: 60px;
-  text-align: center;
-  background: purple;
-  color: white;
-  font-size: 30px;
+/* Search start */
+.search-section {
+  margin-left: 35px;
 }
+
+h1 {
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.search-section .map {
+  display: flex;
+}
+
+.search-section .fa-location-dot {
+  background-color: #f2f2f2;
+  border-radius: 10px 0 0 10px;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 112%;
+}
+
+.search-section input {
+  height: 50px;
+  width: 230px;
+  border: #f2f2f2 1px solid;
+  font-weight: 600;
+  font-size: 119%;
+}
+
+.search-section input::placeholder {
+  color: black;
+  padding-left: 20px;
+}
+
+.search-section .search {
+  border-radius: 0 10px 10px 0;
+  height: 50px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  background-color: #0065fc;
+  cursor: pointer;
+}
+
+.search-section p {
+  margin-bottom: 20px;
+  color: rgb(78, 77, 77);
+}
+/* Search end */
+
+/* Footer start */
+
+.all-footer{
+    width: 100%;
+    background: #F2F2F2;
+    height: 300px;
+    display: flex;
+    padding-top: 40px;
+    margin-left: 0;
+  }
+  
+  .section-footer{
+    flex: 1;
+    margin-left: 40px;
+  }
+  
+  footer h4{
+    font-weight: 900;
+    font-size: 119%;
+    line-height: 50px;
+  }
+  footer a{
+    line-height: 30px;
+    color: rgb(59, 59, 59);
+  }
+  Footer
+  © 2022 GitHub, Inc.
+  Footer navigation
+  
+/* Footer end */

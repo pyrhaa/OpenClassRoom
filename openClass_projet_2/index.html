@@ -11,28 +11,36 @@
   <body>
 
     <!--HEADER NAV-->
-    <header class="flex">
+    <header class="flex" role="banner with nav bar and logo">
         <img src="./assets/logo/Booki.png" alt="Booki logo" />
-      <nav class="nav flex">
-        <a href="#" class="menu-link">Hébergements</a>
-        <a href="#" class="menu-link">Activités</a>
+      <nav class="nav flex" aria-label="Main Navigation" role="navigation">
+        <ul role="menubar" id="appmenu">
+          <li>
+            <a href="#" class="menu-link" role="menuitem">Hébergements</a>
+          </li>
+          <li>
+            <a href="#" class="menu-link" role="menuitem">Activités</a>
+          </li>
+        </ul>
       </nav>
     </header>
 
     <!--MAIN-->
-    <main>
+    <main role="main">
+<!--search bar-->
+    <section class="search-section">
       <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
       <p>En plein centre ville ou en pleine nature</p>
-
-    <section class="form-section">
-      <!--search bar-->
-      <form action="/">
+      <form action="/" class="map">
         <label for="searchBar">search</label>
-        <button type="submit">map icon</button/>
-        <input type="search" name="searchBar" id="searchBar" placeholder="Marseille, France" />
-        <button type="submit">Rechercher</button/>
+        <button type="submit"><i class="fa-solid fa-location-dot"></i></button/>
+        <input class="city" type="search" name="searchBar" id="searchBar" placeholder="Marseille, France" aria-label="Search through site content" />
+        <button type="submit" class="search">Rechercher</button/>
       </form>
-    <!--filters-->
+    </section>
+
+     <!--filters-->
+      <section class="filter-section">
       <div id="myBtnContainer">
         <h2>filtres</h2>
         <button class="btn active">
@@ -50,8 +58,7 @@
         <button class="btn"><i class="fa-solid fa-heart"></i>Romantique</button>
         <button class="btn"><i class="fa-solid fa-dog"></i>Animaux autorisés</button>
       </div>
-    </section>
-      
+      </section>
 
     <p>! Plus de 500 logements sont disponibles dans cette ville</p>
       <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
@@ -66,6 +73,34 @@
     </main>
 
     <!--FOOTER-->
-    <footer>footer</footer>
+    <footer role="contentinfo">
+      <div class="all-footer">
+          <div class="section-footer">
+             <h4>A propos</h4>
+             <ul>
+                  <li><a href="#">Fonctionnement du site</a></li>
+                  <li><a href="#">Conditions générales de vente</a></li>
+                  <li><a href="#">Données et confidentialité</a></li>
+              </ul>
+              
+          </div>
+          <div class="section-footer">
+              <h4>Nos hébergement</h4>
+              <ul>
+                  <li><a href="#">Charte qualité</a></li>
+                  <li><a href="#">Soumettre votre hôtel</a></li>
+              </ul>
+             
+          </div>
+          <div class="section-footer">
+              <h4>Assistance</h4>
+              <ul>
+                  <li><a href="#">Centre d'aide</a></li>
+                  <li><a href="#">Nous contacter</a></li>
+              </ul>
+            
+          </div>   
+      </div>  
+  </footer>
   </body>
 </html>
