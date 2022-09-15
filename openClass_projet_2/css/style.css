@@ -170,11 +170,6 @@ input:-moz-placeholder {
 }
 
 /* INFO */
-.info {
-  display: flex;
-  align-items: center;
-}
-
 .fa-info {
   width: 22px;
   height: 22px;
@@ -185,8 +180,35 @@ input:-moz-placeholder {
   font-size: 11px;
 }
 
-.info p {
+.tooltip {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.tooltip p {
   margin-left: 15px;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #f2f2f2;
+  color: #0065fc;
+  text-align: start;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  right: 100%;
+  margin-right: -100px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 
 /* section accommodation */

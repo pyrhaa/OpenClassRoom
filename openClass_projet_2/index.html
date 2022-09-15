@@ -17,9 +17,11 @@
     <title>Booki</title>
   </head>
 
+  <!--Revoir Breakpoints pour queries, centre le content en taille max(ex. 4000), break 800 tablet, mettre heberg & aside l'un en dessous de l'autre-->
+
   <body>
     <div id="container">
-      <!-- Header -->
+      <!-- Header, mettre en active menu heberg -->
       <header role="banner with nav bar and logo">
         <img id="logo" src="./assets/logo/Booki.png" alt="Booki logo" />
         <nav aria-label="Main Navigation" role="navigation menubar">
@@ -73,10 +75,11 @@
           </ul>
         </section>
 
-        <!-- Info put this with a details tag -->
-        <div class="info">
-          <i class="fas fa-info"></i>
+        <!-- Info -->
+        <div class="tooltip" role="tooltip">
+          <i class="fas fa-info"> </i>
           <p>Plus de 500 logements sont disponibles dans cette ville</p>
+          <span class="tooltiptext">Beaucoup de choix, dis donc !</span>
         </div>
 
         <!-- Section accommodation-->
