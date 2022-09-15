@@ -53,6 +53,7 @@ main {
   padding: 0 45px;
 }
 
+.active,
 .menu-item:hover {
   border-top: 4px solid #0065fc;
   padding: 45px;
@@ -577,7 +578,73 @@ footer li {
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  #page-accommodation {
+    flex-direction: column-reverse;
+    gap: 25px;
+  }
+
+  main {
+    margin: 0;
+  }
+
+  .search,
+  .filter,
+  .info {
+    margin: 20px;
+  }
+
+  #page-activities {
+    margin: 0 12px;
+  }
+
+  .page_populars {
+    background-color: #f2f2f2;
+    border-radius: 0px;
+    width: 100%;
+    padding: 40px 12px 0px 12px;
+  }
+
+  .accommodation_Marseille {
+    background-color: #ffff;
+    border-radius: 0px;
+    width: 100%;
+    padding: 12px;
+  }
+
+  .card_hotel {
+    width: 100%;
+  }
+
+  .card_activities {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .card_one,
+  .card_group {
+    width: 100%;
+  }
+
+  .card_group {
+    gap: 30px;
+  }
+
+  .card_one img,
+  .card_group_1 img,
+  .card_group_2 img {
+    height: 150px;
+  }
+
+  .card_populars {
+    row-gap: 0;
+  }
+
+  .card_accommodation_Marseille {
+    gap: 25px;
+  }
+
   footer {
     gap: 100px;
   }
