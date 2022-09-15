@@ -1,4 +1,4 @@
-# Booki
+![image info](./assets/logo/Booki.png)
 
 An OpenClassRoom's project.
 
