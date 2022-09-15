@@ -71,6 +71,18 @@ main {
   margin-top: 20px;
 }
 
+/* hide the label for accessibility, because it's clear visually and keep label available for assistive tech */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
 .fa-map-marker-alt {
   width: 45px;
   height: 45px;
