@@ -523,7 +523,7 @@ footer li {
 
   .search,
   .filter,
-  .info {
+  .tooltip {
     margin: 20px;
   }
 
@@ -655,17 +655,6 @@ footer li {
 
   .card-accommodation-Marseille {
     gap: 25px;
-  }
-
-  footer {
-    gap: 100px;
-  }
-}
-
-@media screen and (min-width: 993px) and (max-width: 3000px) {
-  body {
-    margin: 0;
-    padding: 0px 50px;
   }
 
   footer {
