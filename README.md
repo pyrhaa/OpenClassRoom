@@ -1,4 +1,4 @@
-![image info](./assets/logo/Booki.png)
+![image info](./images/logo/Booki.png)
 
 An OpenClassRoom's project.
 
